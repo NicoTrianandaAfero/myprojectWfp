@@ -14,7 +14,7 @@ class ProductSeeder extends Seeder
     {
         DB::table('products')->insert([
             'name_product' => 'paracetamol',
-            'price' =>200000,
+            'price' =>30000,
         ]);
          
     }

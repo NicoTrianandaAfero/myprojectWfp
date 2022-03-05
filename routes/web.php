@@ -34,6 +34,6 @@ Route::get('Nico', function(){
     return "Hello WFP C";
 });
 
-Route::get('greating', function(){
+Route::get('greating', function(){ //greating untuk memanggil di webnya 
     return view ('welcome',['name'=>'Nico']);
 });
