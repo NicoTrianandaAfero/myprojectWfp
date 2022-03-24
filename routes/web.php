@@ -37,3 +37,8 @@ Route::get('Nico', function(){
 Route::get('greating', function(){ //greating untuk memanggil di webnya 
     return view ('welcome',['name'=>'Nico']);
 });
+
+Route::resource('obat','MedicineController');
+Route::resource('kategori_obat','CategoryController');
+
+Route::get('/report/listmedicine/{id}','CategoryController@showlist')->name('reportShowMedicine');
